@@ -1,0 +1,202 @@
+.titlediv {
+    width: 75%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.cartpos{
+    width: 75%;
+    text-align: right;
+}
+
+.tablediv {
+    padding-left: 50px;
+    width: 800px;
+}
+
+.tblheader {
+    padding-left: 30px;
+    text-align: center;
+}
+
+.tablerow {
+    padding-top: 15px;
+}
+
+.tableimage {
+    width: 90px;
+    height: 90px;
+}
+
+.addimage {
+    width: 128px;
+    height: 128px;
+}
+
+.qtyinput {
+    width: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+.btntop {
+    padding-top: 25px;
+    width: 219px;
+    height: 64px;
+}
+
+.container {
+    width: 100%;
+    clear: both;
+}
+
+label {
+    display: inline-block;
+    width:300px;
+    text-align: right;
+}
+
+.checkoutln {
+    height: 26px;
+}
+
+.loginbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    height: 160px;
+    width: 470px;
+    margin-left: 35%;
+    margin-top: 35px;
+}
+
+.loginlabel {
+    width:100px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;   
+}
+
+.loginimage {
+    width: 128;
+    height: 128;
+}
+.loginimagediv {
+    margin-top: 20px;
+    float: left;
+}
+
+.loginbtn {
+    width: 98px;
+    height: 36px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.createbtn {
+    width: 98px;
+    height: 36px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.createbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    height: 200px;
+    width: 470px;
+    margin-left: 35%;
+    margin-top: 35px;
+}
+
+.errormsg {
+    color: red;
+}
+
+.shoppingbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.cartBtn {
+    margin-top: 10px;
+    width: 136px;
+    height: 50px;
+}
+
+.detailBtn {
+    width: 178px;
+    height: 50px;
+}
+
+.addcartbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 20px; 
+    width: 600px;
+}
+
+.cartbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 20px; 
+    width: 800px;
+}
+
+.profilebox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 20px; 
+    width: 570px;
+    text-align: left;
+}
+
+.profilepos{
+    width: 70%;
+    text-align: right;
+}
+
+.p1 {
+    width: 240px;
+}
+
+.p2 {
+    width: 165px;
+}
+
+.p3 {
+    width: 85px;
+}
+
+.p4 {
+    width: 75px;
+}
+.p5 {
+    width: 55px;
+}
+
+.checkoutbox {
+    border: 3px solid #080AA9;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 20px; 
+    width: 570px;
+    text-align: left;
+}
+
+.loginTitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+.center1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;   
+}
