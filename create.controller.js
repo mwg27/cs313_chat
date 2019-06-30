@@ -8,8 +8,8 @@ angular.module('app')
         };
         this.create = function (ctrl) {
             var crt = new Object;
-            crt.username = "bill";
-            crt.password = "2345";
+            crt.username = ctrl.username;
+            crt.password = ctrl.password;
             var promise = $http.post("http://mikeg.westus2.cloudapp.azure.com:8080/createLogin", JSON.stringify(crt));
             promise.success(function (data) {
                 return 1;
