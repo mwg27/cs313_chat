@@ -10,7 +10,7 @@ angular.module('app')
             var crt = new Object;
             crt.username = "bill";
             crt.password = "2345";
-            var promise = $http.post('mikeg.westus2.cloudapp.azure.com:8080/createLogin', JSON.stringify(crt));
+            var promise = $http.post("http://mikeg.westus2.cloudapp.azure.com:8080/createLogin", JSON.stringify(crt));
             promise.success(function (data) {
                 return 1;
             });

@@ -37,6 +37,23 @@ app.get('/css/myCSSfile4.css',function(req,res){
   res.sendFile(path.join(__dirname+'/css/myCSSfile4.css'));
 });
 
+app.get('/img/loginbtn.png',function(req,res){
+  res.sendFile(path.join(__dirname+'/img/loginbtn.png'));
+});
+app.get('/img/cancelbtn.png',function(req,res){
+  res.sendFile(path.join(__dirname+'/img/cancelbtn.png'));
+});
+app.get('/img/createbtn.png',function(req,res){
+  res.sendFile(path.join(__dirname+'/img/createbtn.png'));
+});
+app.get('/img/users.jpg',function(req,res){
+  res.sendFile(path.join(__dirname+'/img/users.jpg'));
+});
+
+
+
+
+
 app.post('/createLogin',function(req,res){
     var userName = req.body.username;
     var password = req.body.password;
