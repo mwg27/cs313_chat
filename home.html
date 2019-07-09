@@ -4,10 +4,11 @@
         <div class="loginbox">
             <div class="loginimagediv"><img src="img/LoginRed.jpg" class="loginimage"></div>
             <br>
-            <form >
-                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln"> <br>
-                <label class="loginlabel">Password:&nbsp;</label><input type="password" id="password" name="password" value="" class="checkoutln"><br>
-                <input type="image" src="img/loginbtn.png" alt="Submit" class="loginbtn">
+            <p  class="pass" ng-show="hctrl.invalid">Invalid user name or password!</p>
+            <form >               
+                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln" ng-model="hctrl.loginId"> <br>
+                <label class="loginlabel">Password:&nbsp;</label><input type="password" id="password" name="password" value="" class="checkoutln" ng-model="hctrl.password"><br>
+                <a href=""><img src="img/loginbtn.png" class="loginbtn" ng-click="hctrl.login(hctrl)"></a>
             </form>
         </div>
         <br>

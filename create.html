@@ -1,17 +1,19 @@
 <div class="container-fluid searchnav pr-1">
         <br>
     <h1 class="loginTitle">Welcome to Mike's Chat Room</h1><br>
-    <h4 class="loginTitle">Create an account with us</h4>     
+    <h4 class="loginTitle">Create an account with us</h4>         
         <div class="createbox">
             <div class="loginimagediv"><img src="img/users.jpg" class="loginimage"></div>
             <br>
             <form >
-                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln"> <br>
-                <label class="loginlabel">Password:&nbsp;</label><input type="password" id="password" name="password" value="" class="checkoutln" ng-model="cctrl.usename"><br>
-                <label class="loginlabel">Retype:&nbsp;</label><input type="password" id="password2" name="password2" value="" class="checkoutln" ng-model="cctrl.password"><br>
-                <a href=""><img src="img/cancelbtn.png" class="createbtn" ng-click="cctrl.cancel(cctrl)"></a>
+                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln" ng-model="cctrl.username"> <br>                
+                <label class="loginlabel ">Password:&nbsp;</label><input type="password" id="password1" name="password1" value="" class="checkoutln" ng-model="cctrl.password"><br>
+                <label class="loginlabel ">Retype:&nbsp;</label><input type="password" id="password2" name="password2" value="" class="checkoutln" ng-model="cctrl.password2"><br>
+                <a href=""><img src="img/cancelbtn.png" class="createbtn " ng-click="cctrl.cancel(cctrl)"></a>
                 &nbsp;
                 <a href=""><img src="img/createbtn.png" class="createbtn" ng-click="cctrl.create(cctrl)"></a>
+                <p  class="pass" ng-show="cctrl.passwordok"> Passwords do not match!</p>
+                <p  class="pass" ng-show="cctrl.usernameok"> User name not available!</p>
             </form>
         </div>
     </div>
