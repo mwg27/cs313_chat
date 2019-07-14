@@ -6,9 +6,9 @@
             <br>
             <p  class="pass" ng-show="hctrl.invalid">Invalid user name or password!</p>
             <form >               
-                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln" ng-model="hctrl.loginId"> <br>
-                <label class="loginlabel">Password:&nbsp;</label><input type="password" id="password" name="password" value="" class="checkoutln" ng-model="hctrl.password"><br>
-                <a href=""><img src="img/loginbtn.png" class="loginbtn" ng-click="hctrl.login(hctrl)"></a>
+                <label class="loginlabel">Username:&nbsp;</label><input type="text" id="name" name="name" value="" class="checkoutln" ng-model="hctrl.loginId"  my-enter="hctrl.login(hctrl)" md-autoenter> <br>
+                <label class="loginlabel">Password:&nbsp;</label><input type="password" id="password" name="password" value="" class="checkoutln" ng-model="hctrl.password"  my-enter="hctrl.login(hctrl)" md-autoenter><br>
+                <a href=""><img src="img/loginbtn.png" class="loginbtn" ng-click="hctrl.login(hctrl)" my-enter="hctrl.login(hctrl)" md-autoenter></a>
             </form>
         </div>
         <br>

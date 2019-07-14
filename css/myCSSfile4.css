@@ -239,6 +239,7 @@ label {
     position: absolute;
     left: 160px;
     top: 40px;
+    overflow: auto;
 }
 
 .textDiv {
@@ -248,4 +249,21 @@ label {
     position: absolute;
     left: 10px;
     top: 450px; 
+}
+
+.M4 {
+    margin-left: 5px;
+}
+
+.bkUserSelected {
+    background-color:  lightblue;
+}
+
+.bkUserNotSelected {
+    background-color: white;
+}
+
+.enterTextBox {
+    width: 80%;
+    margin-left: 10%;
 }

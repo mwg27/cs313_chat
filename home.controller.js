@@ -16,6 +16,7 @@ angular.module('app')
                 var id = parseInt(data);
                 if( id >= 0){
                    $rootScope.userId = id;
+                   $rootScope.userName = ctrl.loginId;
                    $state.go('chat');
                 } else {
                     ctrl.invalid = true;

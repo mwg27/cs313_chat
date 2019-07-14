@@ -2,11 +2,32 @@
     <h1 class="chatTitle">Mike's Chat Room</h1><br>
 <div class="LoginListDiv">
 <p class="center2">Chat With</p>
+<table>
+    <tr ng-repeat="user in ctrl.users">
+        <td ng-click="ctrl.setToUser(ctrl,user.name,user.id)">
+            <a class="M4" ng-class="[ctrl.isSelectedUser(ctrl, user.id)]">{{user.name}}</a>
+        </td>
+    </tr>
+</table>
 </div>
-<div class="msgDiv">
+<div class="msgDiv" id="messageDiv">
     <p class="center2">Messages</p>
+    <table class="stretch-vertical" style="width: 100%;" hr-scrollable-table>
+        <thead></thead>
+        <tbody>
+        <tr ng-repeat="msg in ctrl.messages">
+            <td>
+                <a class="M4">{{ctrl.msgHeader(ctrl,msg.fromId,msg.toId)}}</a>
+                <a class="M4">{{msg.msg}}</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 <div class="textDiv">
     <p class="center2">Enter Text:</p>
+    <form >
+        <input type="text" id="msg" name="msg" value="" class="enterTextBox" ng-model="ctrl.newMessage" my-enter="ctrl.SendMessage(ctrl)" md-autoenter> <br>                        
+    </form>
 </div>        
 </div>
